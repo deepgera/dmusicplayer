@@ -28,7 +28,7 @@ import {Songcontext} from "../context";
 const useStyles = makeStyles({
   root: {
     flexgrow:1,
-    margin:'35px',
+    margin:'45px',
     maxWidth: 250,
     maxHeight: 370
   },
@@ -58,7 +58,7 @@ export function SliderCard(){
     useEffect(()=>{
       console.log(Songdata);
       console.log(title);
-      if(songid!=""){
+      if(songid!==""){
       fetchurl();
       }
     },[songid])

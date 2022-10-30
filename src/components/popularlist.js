@@ -20,14 +20,19 @@ const useStyles = makeStyles({
     display:'flex',
     flexDirection:'row'
   },
-root: {
+  root: {
     flexgrow:1,
-  //  //display:'flex',
-  //  //flexDirection:'row',
     margin:'35px',
     maxWidth: 250,
     maxHeight: 370
-  }})
+  },
+  artists: {
+    flexgrow:1,
+    margin:'65px',
+    maxWidth: 290,
+    maxHeight: 370
+  }
+})
 
 function Popularlists(){
   const { value,songdata,playing,Url,nowplay,searchbar,covers,titles } = useContext(Songcontext);
@@ -62,7 +67,7 @@ function Popularlists(){
 
    <div className={classes.outer}> 
    { popartist.map((ob)=>(
-<Card className={classes.root}>  
+<Card className={classes.artists}>  
   <CardContent>
     <CardMedia
       component="img"
