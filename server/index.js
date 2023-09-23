@@ -28,7 +28,7 @@ app.get("/download", (req, res) => {
 });
 
 
-app.use('*',async (req,res)=>{
+app.get('/',async (req,res)=>{
   console.log(path.join(__dirname, '../build/', 'index.html'));
   res.sendFile(path.join(__dirname, '../build/', 'index.html'))
 });
